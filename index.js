@@ -22,6 +22,9 @@ app.use('/code', code);
 app.use('/pair', async (req, res) => {
     res.sendFile(path.join(__dirname, 'pair.html'));
 });
+app.use('/qr', async (req, res) => {
+    res.sendFile(path.join(__dirname, 'qr.html'));
+});
 app.use('/', async (req, res) => {
     res.sendFile(path.join(__dirname, 'main.html'));
 });
